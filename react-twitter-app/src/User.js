@@ -30,16 +30,14 @@ class User extends React.Component
                         followers={this.props.followers}
                     />
                 }
-                <h4 className="User-name">
+                <h2 className="User-name">
                     {this.props.name}
-                </h4>
+                </h2>
                 <p style = {{textAlign:"center"}}>
-                    <h3>Followers</h3> 
-                    {this.props.followers.length}
+                    <h3>Followers: {this.props.followers.length}</h3>
                 </p>
                 <p style ={{textAlign:"center"}}>
-                    <h3>Following</h3>
-                    {this.props.following.length}
+                    <h3>Following: {this.props.following.length}</h3>
                 </p>
         </div>
         )
