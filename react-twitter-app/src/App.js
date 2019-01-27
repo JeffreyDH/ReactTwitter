@@ -80,11 +80,11 @@ class App extends React.Component
     removeFollowing = (userName, name) => {
         var newUsers = this.state.users
         newUsers.forEach((user,index)=> {
-            if(user.name===userName) {
-                for(var i=0; i<newUsers[index].following.length; i++) {
+            if(user.name === userName) {
+                for(var i=0; i<newUsers[index].following.length; ++i) {
                     if(name === newUsers[index].following[i]) {
                         user.following.splice(i,1) 
-                        newUsers[index].following =user.following
+                        newUsers[index].following = user.following
                     }
                 }
             }
