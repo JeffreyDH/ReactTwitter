@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import ItemCard from './ItemCard';
 import ItemModal from './ItemModal';
+import SearchBar from './SearchBar';
 import User from './User';
 
 class App extends React.Component
@@ -128,6 +129,7 @@ class App extends React.Component
     {
         return(
             <div>
+                <SearchBar/>
                 {this.display(this.generateUser)}
             </div>
         )
