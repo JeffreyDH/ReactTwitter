@@ -1,6 +1,7 @@
 import React from 'react';
 import Modal from 'react-bootstrap/lib/Modal';
 import Button from 'react-bootstrap/lib/Button';
+import './UserModal.css';
 
 class UserModal extends React.Component {
     constructor(props, context)
@@ -14,8 +15,9 @@ class UserModal extends React.Component {
             <div className="static-modal">
                 <Modal.Dialog>
                     <Modal.Header>
-                        <img src={this.props.img}/>
                         <Modal.Title>{this.props.name}</Modal.Title>
+                        <br/>
+                        <img className="UserModal-image" src={this.props.img}/>
                     </Modal.Header>
                     <Modal.Body>
                         <div className="UserModal-following">
