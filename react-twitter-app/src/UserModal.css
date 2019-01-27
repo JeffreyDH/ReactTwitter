@@ -11,3 +11,12 @@
 .UserModal-body {
     text-align: center;
 }
+
+.UserModal-removeBtn {
+    margin: 10px;
+}
+
+.static-modal {
+    max-height: 100vh;
+    overflow-y: auto;
+}
