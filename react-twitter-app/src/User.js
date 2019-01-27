@@ -9,7 +9,8 @@ class User extends React.Component
         {
             name: this.props.name,
             followers: this.props.followers,
-            following: this.props.following
+            following: this.props.following,
+            imgPath: this.props.imgPath
         }
     }
 

@@ -98,7 +98,7 @@ class App extends React.Component
             name = {user.name}
             followers = {user.followers}
             following = {user.following}
-            imgPath = {user.imgPath}
+            img = {user.imgPath}
         />)
     };
 
