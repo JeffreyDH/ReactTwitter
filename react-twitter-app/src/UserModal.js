@@ -22,7 +22,13 @@ class UserModal extends React.Component {
                     <Modal.Body>
                         <div className="UserModal-following">
                             <h4>Following</h4>
-                            {this.props.following.map(name => <p>{name}<Button>Remove</Button></p>)}
+                            {this.props.following.map((name) => {
+                                return (
+                                <p>{name}
+                                <Button onClick={()=>this.props.removeFollowing(this.props.name,name)} >Remove</Button>
+                                </p>      
+                                )     
+                            })}
                         </div>
 
                         <div>
