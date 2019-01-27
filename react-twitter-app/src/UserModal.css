@@ -1,4 +1,13 @@
 .UserModal-image {
-    height: 500px;
-    width: 500px;
+    height: 60%;
+    width: 60%;
+}
+
+.UserModal-userLists {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.UserModal-body {
+    text-align: center;
 }

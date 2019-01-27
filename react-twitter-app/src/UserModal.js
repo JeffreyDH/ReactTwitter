@@ -16,24 +16,25 @@ class UserModal extends React.Component {
                 <Modal.Dialog>
                     <Modal.Header>
                         <Modal.Title>{this.props.name}</Modal.Title>
-                        <br/>
-                        <img className="UserModal-image" src={this.props.img}/>
                     </Modal.Header>
-                    <Modal.Body>
-                        <div className="UserModal-following">
-                            <h4>Following</h4>
-                            {this.props.following.map((name) => {
-                                return (
-                                <p>{name}
-                                <Button onClick={()=>this.props.removeFollowing(this.props.name,name)} >Remove</Button>
-                                </p>      
-                                )     
-                            })}
-                        </div>
+                    <Modal.Body className="UserModal-body">
+                        <img className="UserModal-image" src={this.props.img}/>
+                        <div className="UserModal-userLists">
+                            <div className="UserModal-following">
+                                <h4>Following</h4>
+                                {this.props.following.map((name) => {
+                                    return (
+                                    <p>{name}
+                                    <Button onClick={()=>this.props.removeFollowing(this.props.name,name)} >Remove</Button>
+                                    </p>      
+                                    )     
+                                })}
+                            </div>
 
-                        <div>
-                            <h4>Followers</h4>
-                            {this.props.followers.map(name => <p>{name}</p>)}
+                            <div className="UserModal-followers">
+                                <h4>Followers</h4>
+                                {this.props.followers.map(name => <p>{name}</p>)}
+                            </div>
                         </div>
                     </Modal.Body>
                     <Modal.Footer>

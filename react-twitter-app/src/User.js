@@ -35,11 +35,11 @@ class User extends React.Component
                     {this.props.name}
                 </h4>
                 <p style = {{textAlign:"center"}}>
-                    Followers
+                    <h3>Followers</h3> 
                     {this.props.followers.length}
                 </p>
                 <p style ={{textAlign:"center"}}>
-                    Following
+                    <h3>Following</h3>
                     {this.props.following.length}
                 </p>
         </div>
