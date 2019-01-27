@@ -1,5 +1,4 @@
 import React from 'react';
-// import { className } from 'postcss-selector-parser';
 import './ItemCard.css';
 import ItemModal from './ItemModal';
 
@@ -23,27 +22,27 @@ class ItemCard extends React.Component
     
     render(){
         return(
-            <div className = "ItemCard-container">
-            <img class="ItemCard-img" src={this.props.imgPath}/>
-            {!this.state.isShowing && 
-                <ItemModal
-                    itemTitle={this.props.itemTitle}
-                    itemDescription={this.props.itemDescription}
-                    handleClose = {this.handleClick}
-                />
-            
-            }
-            <h4 className="ItemCard-title">
-                {this.props.vendor}
-            </h4>
-            <p style = {{textAlign:"center"}}>
-            </p>
-            <p style ={{textAlign:"center"}}>
-                <span style={{fontWeight:"bold"}}>
-                    {this.props.locations}
-                </span>
-            </p>
-            <button onClick={this.handleClick}>Click me</button>
+            <div className = "ItemCard-container" onClick={this.handleClick}>
+                <img class="ItemCard-img" src={this.props.imgPath}/>
+                {!this.state.isShowing && 
+                    <ItemModal
+                        itemTitle={this.props.itemTitle}
+                        itemDescription={this.props.itemDescription}
+                        handleClose = {this.handleClick}
+                    />
+                
+                }
+                <h4 className="ItemCard-title">
+                    {this.props.vendor}
+                </h4>
+                <p style = {{textAlign:"center"}}>
+                </p>
+                <p style ={{textAlign:"center"}}>
+                    <span style={{fontWeight:"bold"}}>
+                        {this.props.locations}
+                    </span>
+                </p>
+                <button onClick={this.handleClick}>Click me</button>
             </div>
             
         )

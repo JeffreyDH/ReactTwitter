@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import ItemCard from './ItemCard';
 import ItemModal from './ItemModal';
+import User from './ItemModal';
+
 class App extends React.Component
 {
     constructor(props, context)
@@ -35,13 +37,26 @@ class App extends React.Component
                 imgPath:"https://thumbs.dreamstime.com/z/rat-terrier-chihuahua-mixed-breed-dog-86680681.jpg"
             }
 
+        ],
+        users:[
+            {
+                name: "Jeff",
+                followers:[
+                    {
+                        
+                    }
+                ]
+            }
         ]
-       };
+        
+    };
+       
     }
 
     displayItems = ()=>
     {
-        return this.state.items.map(this.generateItem)
+        //return this.state.items.map(this.generateItem)
+        return this.state.users.map(this.generateUser);
     };
 
     generateItem = (item)=>
@@ -52,6 +67,14 @@ class App extends React.Component
             locations={item.locations}
             imgPath={item.imgPath}
             itemDescription={item.itemDescription}
+        />)
+    };
+    generateUser =(user)=>
+    {
+        return(<User 
+            name = {user.name}
+            followers = {user.followers}
+            following = {user.following}
         />)
     };
 
