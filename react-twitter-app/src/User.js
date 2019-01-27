@@ -20,26 +20,30 @@ class User extends React.Component
     render()
     {
         return(
-        <div className = "User-container" onClick={this.handleClick}>
-                <img class="User-img" src={this.props.img}/>
+            <div>
                 {!this.state.isShowing && 
-                    <UserModal
-                        img = {this.props.img}
-                        name={this.props.name}
-                        following={this.props.following}
-                        followers={this.props.followers}
-                        removeFollowing = {this.props.removeFollowing}
-                    />
+                            <UserModal
+                                img = {this.props.img}
+                                name={this.props.name}
+                                following={this.props.following}
+                                followers={this.props.followers}
+                                removeFollowing = {this.props.removeFollowing}
+                                handleClose = {this.handleClick}
+                            />
                 }
-                <h2 className="User-name">
-                    {this.props.name}
-                </h2>
-                <p style = {{textAlign:"center"}}>
-                    <h3>Followers: {this.props.followers.length}</h3>
-                </p>
-                <p style ={{textAlign:"center"}}>
-                    <h3>Following: {this.props.following.length}</h3>
-                </p>
+                <div className = "User-container" onClick={this.handleClick}>
+                        <img class="User-img" src={this.props.img}/>
+                        
+                        <h2 className="User-name">
+                            {this.props.name}
+                        </h2>
+                        <p style = {{textAlign:"center"}}>
+                            <h3>Followers: {this.props.followers.length}</h3>
+                        </p>
+                        <p style ={{textAlign:"center"}}>
+                            <h3>Following: {this.props.following.length}</h3>
+                        </p>
+                </div>
         </div>
         )
     }
