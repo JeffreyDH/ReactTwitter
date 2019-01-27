@@ -16,11 +16,7 @@ class App extends React.Component
                 itemDescription:"Best boy",
                 vendor:"The shelter",
                 locations:"Near you",
-                imgPath: "https://d3544la1u8djza.cloudfront.net/APHI/Blog/2017/January_01/training+a+pug+_+fawn+pug+with+a+hot++pink+harness+carrying+a+ball.jpg",
-                following:[
-                    
-                ]
-                
+                imgPath: "https://d3544la1u8djza.cloudfront.net/APHI/Blog/2017/January_01/training+a+pug+_+fawn+pug+with+a+hot++pink+harness+carrying+a+ball.jpg"
             },
             {
                 itemName: "Winston", 
@@ -41,11 +37,38 @@ class App extends React.Component
         users:[
             {
                 name: "Jeff",
+                following:[
+                    "jesus",
+                    "buddha"
+                ],
                 followers:[
-                    {
-                        
-                    }
-                ]
+                    "guillermo"
+                ],
+                imgPath: "https://irp-cdn.multiscreensite.com/94f3e251/dms3rep/multi/mobile/a-black-pug-adult-dog++%28275+x+275%29-min.jpg"
+            },
+            {
+                name:"Guillermo",
+                following:[
+                    "Jeff",
+                    "Manav"
+                ],
+                followers:[
+                    
+                ],
+                imgPath:"https://thumbs.dreamstime.com/z/rat-terrier-chihuahua-mixed-breed-dog-86680681.jpg"
+            },
+            {
+                name:"Manav",
+                following:[
+                    "tommy",
+                    "hecuba",
+                    "guillermo"
+                ],
+                followers:
+                [
+                    "guillermo"
+                ],
+                imgPath:""
             }
         ]
         
@@ -55,8 +78,8 @@ class App extends React.Component
 
     displayItems = ()=>
     {
-        //return this.state.items.map(this.generateItem)
-        return this.state.users.map(this.generateUser);
+        return this.state.items.map(this.generateItem)
+        //return this.state.users.map(this.generateUser);
     };
 
     generateItem = (item)=>
@@ -75,6 +98,7 @@ class App extends React.Component
             name = {user.name}
             followers = {user.followers}
             following = {user.following}
+            imgPath = {user.imgPath}
         />)
     };
 

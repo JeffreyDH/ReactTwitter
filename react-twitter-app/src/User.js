@@ -12,11 +12,11 @@ class User extends React.Component
             following: this.props.following
         }
     }
-    // render()
-    // {
-    //     <div className="User">
-            
-    //     </div>
-    // }
+
+    render()
+    {
+
+    }
 }
+
 export default User;
