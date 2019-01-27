@@ -28,6 +28,7 @@ class User extends React.Component
                                 following={this.props.following}
                                 followers={this.props.followers}
                                 removeFollowing = {this.props.removeFollowing}
+                                removeFollowers = {this.props.removeFollowers}
                                 handleClose = {this.handleClick}
                             />
                 }

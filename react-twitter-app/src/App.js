@@ -106,6 +106,24 @@ class App extends React.Component
         })
     }
 
+    removeFollowers = (userName, name) => {
+        var newUsers = this.state.users
+        newUsers.forEach((user,index)=> {
+            if(user.name === userName) {
+                for(var i=0; i<newUsers[index].followers.length; ++i) {
+                    if(name === newUsers[index].followers[i]) {
+                        user.followers.splice(i,1) 
+                        newUsers[index].followers = user.followers
+                    }
+                }
+            }
+        })
+        
+        this.setState({
+            users: newUsers
+        })
+    }
+
     displayItems = ()=>
     {
         return this.state.items.map(this.generateItem)
@@ -133,6 +151,7 @@ class App extends React.Component
             following = {user.following}
             img = {user.imgPath}
             removeFollowing = {this.removeFollowing}
+            removeFollowers = {this.removeFollowers}
         />)
     };
 
