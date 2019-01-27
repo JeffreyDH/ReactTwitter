@@ -1,0 +1,14 @@
+.User-container
+{
+    width: 300px;
+}
+.User-name
+{
+    text-align:'center';
+    font-weight:'bold';
+}
+.User-img
+{
+    width: 500px;
+    height: 500px;
+}

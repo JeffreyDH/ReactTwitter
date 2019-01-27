@@ -68,7 +68,7 @@ class App extends React.Component
                 [
                     "guillermo"
                 ],
-                imgPath:""
+                imgPath:"https://cdn3-www.dogtime.com/assets/uploads/gallery/great-dane-dogs-and-puppies/thumbs/thumbs_great-dane-dogs-puppies-5.jpg"
             }
         ]
         

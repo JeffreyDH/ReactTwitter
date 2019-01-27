@@ -1,6 +1,7 @@
 
 import React from 'react';
 import UserModal from './UserModal'
+import './User.css'
 class User extends React.Component
 {
     constructor(props, context)
@@ -9,10 +10,6 @@ class User extends React.Component
         this.state = 
         {
             isShowing:true
-            // name: this.props.name,
-            // followers: this.props.followers,
-            // following: this.props.following,
-            // img: this.props.img
         }
     }
     handleClick = (e) =>{
@@ -44,7 +41,6 @@ class User extends React.Component
                     Following
                     {this.props.following.length}
                 </p>
-                <button onClick={this.handleClick}>Click me</button>
         </div>
         )
     }

@@ -14,7 +14,7 @@ class ItemCard extends React.Component
             isShowing: true
         }
     }
-    handleClick = (e) =>{
+    handleClick = () =>{
         this.setState({
             isShowing: !this.state.isShowing
         });
