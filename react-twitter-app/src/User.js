@@ -28,6 +28,7 @@ class User extends React.Component
                         name={this.props.name}
                         following={this.props.following}
                         followers={this.props.followers}
+                        removeFollowing = {this.props.removeFollowing}
                     />
                 }
                 <h2 className="User-name">
