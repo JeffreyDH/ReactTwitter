@@ -15,9 +15,6 @@ class SearchBar extends React.Component {
       }
   }
 
-  getValidationState() {
-    return 'warning';
-  }
 
   handleChange(e) {
     this.setState({ value: e.target.value });
@@ -28,7 +25,6 @@ class SearchBar extends React.Component {
       <form>
         <FormGroup
           controlId="formBasicText"
-          validationState={this.getValidationState()}
         >
           <ControlLabel>Search</ControlLabel>
           <FormControl
