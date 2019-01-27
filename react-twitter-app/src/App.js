@@ -45,7 +45,7 @@ class App extends React.Component
                 followers:[
                     "guillermo"
                 ],
-                imgPath: "https://irp-cdn.multiscreensite.com/94f3e251/dms3rep/multi/mobile/a-black-pug-adult-dog++%28275+x+275%29-min.jpg"
+                imgPath: "https://mymodernmet.com/wp/wp-content/uploads/2018/01/bailey-dog-meme-2.jpg"
             },
             {
                 name:"Guillermo",
