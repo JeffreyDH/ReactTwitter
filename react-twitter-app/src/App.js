@@ -55,8 +55,8 @@ class App extends React.Component
 
     displayItems = ()=>
     {
-        //return this.state.items.map(this.generateItem)
-        return this.state.users.map(this.generateUser);
+        return this.state.items.map(this.generateItem)
+        //return this.state.users.map(this.generateUser);
     };
 
     generateItem = (item)=>
@@ -75,6 +75,7 @@ class App extends React.Component
             name = {user.name}
             followers = {user.followers}
             following = {user.following}
+            img = {user.imgPath}
         />)
     };
 
