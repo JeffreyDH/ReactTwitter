@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import ItemCard from './ItemCard';
 import ItemModal from './ItemModal';
-import User from './ItemModal';
+import User from './User';
 
 class App extends React.Component
 {
@@ -79,8 +79,11 @@ class App extends React.Component
     displayItems = ()=>
     {
         return this.state.items.map(this.generateItem)
-        //return this.state.users.map(this.generateUser);
     };
+    display = (func)=>
+    {
+        return this.state.users.map(func);
+    }
 
     generateItem = (item)=>
     {
@@ -106,7 +109,7 @@ class App extends React.Component
     {
         return(
             <div>
-                {this.displayItems()}
+                {this.display(this.generateUser)}
             </div>
         )
     }
