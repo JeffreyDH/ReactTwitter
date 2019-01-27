@@ -25,7 +25,7 @@ class UserModal extends React.Component {
                                 {this.props.following.map((name) => {
                                     return (
                                     <p>{name}
-                                    <Button onClick={()=>this.props.removeFollowing(this.props.name,name)} >Remove</Button>
+                                    <Button onClick={()=>this.props.removeFollowing(this.props.name, name)} >Remove</Button>
                                     </p>      
                                     )     
                                 })}
