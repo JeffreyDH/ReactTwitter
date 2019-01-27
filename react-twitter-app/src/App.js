@@ -70,7 +70,18 @@ class App extends React.Component
                     "guillermo"
                 ],
                 imgPath:"https://i.kym-cdn.com/photos/images/newsfeed/000/279/589/1df.jpg"
-            }
+            },
+            {
+                name: "Jason",
+                following:[
+                    "golden retriever",
+                    "poodle"
+                ],
+                followers:[
+                    "guillermo"
+                ],
+                imgPath: "https://www.petmd.com/sites/default/files/Acute-Dog-Diarrhea-47066074.jpg"
+            },
         ]
         
     };
