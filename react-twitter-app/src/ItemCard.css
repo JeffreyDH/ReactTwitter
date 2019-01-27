@@ -1,0 +1,14 @@
+.ItemCard-container
+{
+    width: 300px;
+}
+.ItemCard-title
+{
+    text-align:'center';
+    font-weight:'bold';
+}
+.ItemCard-img
+{
+    width: 500px;
+    height: 500px;
+}
