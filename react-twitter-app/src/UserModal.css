@@ -11,3 +11,8 @@
 .UserModal-body {
     text-align: center;
 }
+
+.UserModal-removeBtn {
+    background-color: red;
+    color: white;
+}
