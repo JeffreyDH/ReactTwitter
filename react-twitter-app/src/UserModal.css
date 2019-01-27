@@ -6,6 +6,7 @@
 .UserModal-userLists {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 20px;
 }
 
 .UserModal-body {
@@ -19,4 +20,8 @@
 .static-modal {
     max-height: 100vh;
     overflow-y: auto;
+}
+
+.removeBtn {
+    margin-left: 20px;
 }

@@ -25,7 +25,7 @@ class UserModal extends React.Component {
                                 {this.props.following.map((name) => {
                                     return (
                                     <h5>{name}               
-                                    <Button bsStyle="danger" bsSize="xsmall" onClick={()=>this.props.removeFollowing(this.props.name,name)} >Remove</Button>
+                                    <Button className="removeBtn" bsStyle="danger" bsSize="xsmall" onClick={()=>this.props.removeFollowing(this.props.name,name)} >Remove</Button>
                                     </h5>      
                                     )     
                                 })}
@@ -36,7 +36,7 @@ class UserModal extends React.Component {
                                 {this.props.followers.map((name) => {
                                     return (
                                     <h5>{name}               
-                                    <Button bsStyle="danger" bsSize="xsmall" onClick={()=>this.props.removeFollowers(this.props.name,name)} >Remove</Button>
+                                    <Button className="removeBtn" bsStyle="danger" bsSize="xsmall" onClick={()=>this.props.removeFollowers(this.props.name,name)} >Remove</Button>
                                     </h5>      
                                     )     
                                 })}
