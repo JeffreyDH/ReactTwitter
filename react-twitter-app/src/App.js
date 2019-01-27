@@ -56,7 +56,7 @@ class App extends React.Component
                 followers:[
                     "guillermo"
                 ],
-                imgPath:"https://thumbs.dreamstime.com/z/rat-terrier-chihuahua-mixed-breed-dog-86680681.jpg"
+                imgPath:"https://cdn.pixilart.com/photos/large/d4b817e0869ff32.jpg"
             },
             {
                 name:"Manav",
