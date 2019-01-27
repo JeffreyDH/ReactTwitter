@@ -53,7 +53,7 @@ class App extends React.Component
                     "Manav"
                 ],
                 followers:[
-                    
+                    "guillermo"
                 ],
                 imgPath:"https://thumbs.dreamstime.com/z/rat-terrier-chihuahua-mixed-breed-dog-86680681.jpg"
             },
