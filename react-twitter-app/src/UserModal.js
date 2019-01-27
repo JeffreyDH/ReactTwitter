@@ -14,12 +14,15 @@ class UserModal extends React.Component {
             <div className="static-modal">
                 <Modal.Dialog>
                     <Modal.Header>
+                        <img src={this.props.img}/>
                         <Modal.Title>{this.props.name}</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body>{this.props.itemDescription}</Modal.Body>
+                    <Modal.Body>
+                        {this.props.following.map(name => <p>{name}</p>)}
+                        {this.props.followers.map(name => <p>{name}</p>)}
+                    </Modal.Body>
                     <Modal.Footer>
                         <Button onClick={this.props.handleClose}>Close</Button>
-                        <Button bsStyle="primary">Save changes</Button>
                     </Modal.Footer>
                 </Modal.Dialog>
             </div>
