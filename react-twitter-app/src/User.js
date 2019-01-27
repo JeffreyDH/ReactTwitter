@@ -30,7 +30,7 @@ class User extends React.Component
                         img = {this.props.img}
                         name={this.props.name}
                         following={this.props.following}
-                        followers={this.props.following}
+                        followers={this.props.followers}
                     />
                 }
                 <h4 className="User-name">
